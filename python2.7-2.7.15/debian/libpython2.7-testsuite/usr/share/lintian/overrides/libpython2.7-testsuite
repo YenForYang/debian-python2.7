@@ -1,0 +1,4 @@
+libpython2.7-testsuite binary: python-script-but-no-python-dep
+libpython2.7-testsuite binary: image-file-in-usr-lib
+libpython2.7-testsuite binary: privacy-breach-generic
+libpython2.7-testsuite binary: command-with-path-in-maintainer-script

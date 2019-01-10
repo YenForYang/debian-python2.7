@@ -1,0 +1,13 @@
+idle-python2.7_2.7.15-5_all.deb python optional
+libpython2.7-dbg_2.7.15-5_amd64.deb debug optional
+libpython2.7-dev_2.7.15-5_amd64.deb libdevel optional
+libpython2.7-minimal_2.7.15-5_amd64.deb python optional
+libpython2.7-stdlib_2.7.15-5_amd64.deb python optional
+libpython2.7-testsuite_2.7.15-5_all.deb libdevel optional
+libpython2.7_2.7.15-5_amd64.deb libs optional
+python2.7-dbg_2.7.15-5_amd64.deb debug optional
+python2.7-dev_2.7.15-5_amd64.deb python optional
+python2.7-doc_2.7.15-5_all.deb doc optional
+python2.7-examples_2.7.15-5_all.deb python optional
+python2.7-minimal_2.7.15-5_amd64.deb python optional
+python2.7_2.7.15-5_amd64.deb python optional

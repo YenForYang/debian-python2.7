@@ -1,0 +1,12 @@
+Document: python2.7-inst
+Title: Installing Python Modules (v2.7)
+Author: Greg Ward
+Abstract: This document describes the Python Distribution Utilities
+ (``Distutils'') from the end-user's point-of-view, describing how to
+ extend the capabilities of a standard Python installation by building
+ and installing third-party Python modules and extensions.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python2.7/html/install/index.html
+Files: /usr/share/doc/python2.7/html/install/*.html

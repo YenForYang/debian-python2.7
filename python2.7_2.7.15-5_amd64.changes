@@ -1,0 +1,82 @@
+Format: 1.8
+Date: Wed, 28 Nov 2018 17:27:22 +0100
+Source: python2.7
+Binary: python2.7 libpython2.7-stdlib python2.7-minimal libpython2.7-minimal libpython2.7 python2.7-examples python2.7-dev libpython2.7-dev libpython2.7-testsuite idle-python2.7 python2.7-doc python2.7-dbg libpython2.7-dbg
+Built-For-Profiles: nobiarch nocheck
+Architecture: all amd64
+Version: 2.7.15-5
+Distribution: unstable
+Urgency: medium
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Matthias Klose <doko@debian.org>
+Description:
+ idle-python2.7 - IDE for Python (v2.7) using Tkinter
+ libpython2.7 - Shared Python runtime library (version 2.7)
+ libpython2.7-dbg - Debug Build of the Python Interpreter (version 2.7)
+ libpython2.7-dev - Header files and a static library for Python (v2.7)
+ libpython2.7-minimal - Minimal subset of the Python language (version 2.7)
+ libpython2.7-stdlib - Interactive high-level object-oriented language (standard library
+ libpython2.7-testsuite - Testsuite for the Python standard library (v2.7)
+ python2.7  - Interactive high-level object-oriented language (version 2.7)
+ python2.7-dbg - Debug Build of the Python Interpreter (version 2.7)
+ python2.7-dev - Header files and a static library for Python (v2.7)
+ python2.7-doc - Documentation for the high-level object-oriented language Python
+ python2.7-examples - Examples for the Python language (v2.7)
+ python2.7-minimal - Minimal subset of the Python language (version 2.7)
+Closes: 909673 912422
+Changes:
+ python2.7 (2.7.15-5) unstable; urgency=medium
+ .
+   * Update to 20181127 from the 2.7 branch.
+     - Fix issue #20744, running an external 'zip' in shutil.make_archive().
+       CVE-2018-1000802. Closes: #909673.
+   * Cherrypick in-progress backports to 2.7 branch from 3.6 branch to fix
+     test_ssl assertions with openssl 1.1.1. Resolves autopkgtest failure
+     of the 2.7 with openssl 1.1.1 (Dimitri John Ledkov).
+   * Don't hard code location of netinet/in.h. Closes: #912422.
+   * Update VCS attributes.
+Checksums-Sha1:
+ 2c30822f79825722876b44ef7c240de09223d1a4 339284 idle-python2.7_2.7.15-5_all.deb
+ feda6d79fbf63c7c127389b2fccfc2da015421cf 4901196 libpython2.7-dbg_2.7.15-5_amd64.deb
+ 4f2c729dae933975931db54e5ec7dee45c3bdf5c 31551776 libpython2.7-dev_2.7.15-5_amd64.deb
+ 8af4bed16b463f7193c3170abe9ad32ba1fca1d6 394196 libpython2.7-minimal_2.7.15-5_amd64.deb
+ b51cf9dac8423b2311ff78d329800a268c140563 1911756 libpython2.7-stdlib_2.7.15-5_amd64.deb
+ 2322cbd5e065892ddcb0fd6abe576780ce04bb6c 2155116 libpython2.7-testsuite_2.7.15-5_all.deb
+ dccd4e33b1a5e541796f452ed526ee5275a0cc51 1039864 libpython2.7_2.7.15-5_amd64.deb
+ 828b38e840a23f24f10204cb4bb6201e8352f272 9655688 python2.7-dbg_2.7.15-5_amd64.deb
+ 8901eb5a1d6b5f35cea9535482bf1bbd34bbc93c 262660 python2.7-dev_2.7.15-5_amd64.deb
+ 155fb7fa111938430d099d49f8635d2afd68cf11 4403780 python2.7-doc_2.7.15-5_all.deb
+ f493d444fb8c9c4085175a678fe1c73d2f49dab5 714096 python2.7-examples_2.7.15-5_all.deb
+ 7f802daea1ef358d0d21867d04354040a75a5b01 1366704 python2.7-minimal_2.7.15-5_amd64.deb
+ cd2bc76081ddb3206c7a01a93d8e4881bbc66167 13612 python2.7_2.7.15-5_amd64.buildinfo
+ d6f3202bdc58589b59e92db133528afa214d6685 298728 python2.7_2.7.15-5_amd64.deb
+Checksums-Sha256:
+ 2b6d193f6be9c197de283989117c0bae8bf6b1ed5842871540a377bf5e1462ed 339284 idle-python2.7_2.7.15-5_all.deb
+ 2950eee349743529c499111e2c10185497dbba655bfbf282bb6b029929151ca1 4901196 libpython2.7-dbg_2.7.15-5_amd64.deb
+ 6fd6cb37926a2e7ccce75e4f880187c763de919dba9db5a43d80525bf130f7be 31551776 libpython2.7-dev_2.7.15-5_amd64.deb
+ 504b333085f388c38001b6eb67a6a6182a107f127735d2130db2224c1639a5a6 394196 libpython2.7-minimal_2.7.15-5_amd64.deb
+ 5b8b3d9c30e0b8da51ffb6c8e0a2501acfd5c300ec540b23c330fa2f06897f02 1911756 libpython2.7-stdlib_2.7.15-5_amd64.deb
+ 63fc440ec5e18768e20c7db98e008ea142e2eb38eae79a6930cf0201287b7058 2155116 libpython2.7-testsuite_2.7.15-5_all.deb
+ beb6d963c47469016561e407b4e791087299378cd0a67953a7eaa460bb27ef21 1039864 libpython2.7_2.7.15-5_amd64.deb
+ aada87d05c17fd929b98760e10f63c8171e200d9d1bd250a97a8497cf07e418c 9655688 python2.7-dbg_2.7.15-5_amd64.deb
+ da2c830927090fcf70d89aafebae73f7fe5068f504d42d600bf7ea2e7b3cf252 262660 python2.7-dev_2.7.15-5_amd64.deb
+ 908f25067e248313a367d2666ff65bbabc6622a9bcc766fa876e055ee00df836 4403780 python2.7-doc_2.7.15-5_all.deb
+ 67bfc0208f4b938ff7c6dbba4e32fbcf7fff2a9e99cd2a0fa98c00d2f5b8f40c 714096 python2.7-examples_2.7.15-5_all.deb
+ 294fcec1798835e393a3fb1b3e50c715e0fa5f15f20796461cf060ba2721f96b 1366704 python2.7-minimal_2.7.15-5_amd64.deb
+ 5dc78ea44b0a52d6268b73eb98773afb6f531ef463c46afcd32b7ab7e86a89c1 13612 python2.7_2.7.15-5_amd64.buildinfo
+ 159c9aa3a8b9381c2837b134d3001fa3c2be45fc31423b48652f11829d8fb293 298728 python2.7_2.7.15-5_amd64.deb
+Files:
+ ad3f64abd6c896b9748f64007d408ded 339284 python optional idle-python2.7_2.7.15-5_all.deb
+ aaa8085613bd310f41a934dc61db118f 4901196 debug optional libpython2.7-dbg_2.7.15-5_amd64.deb
+ bff29b7ebb1b98644a492587c6f2bac1 31551776 libdevel optional libpython2.7-dev_2.7.15-5_amd64.deb
+ 51b4966d8eb93db822c79e56949fb11c 394196 python optional libpython2.7-minimal_2.7.15-5_amd64.deb
+ 69933db6bb85c5c8d834dc722c1580e3 1911756 python optional libpython2.7-stdlib_2.7.15-5_amd64.deb
+ 7693295f2a39ebd129d1332fb9f7822c 2155116 libdevel optional libpython2.7-testsuite_2.7.15-5_all.deb
+ ee441d66881d932c7bec614fc32847e0 1039864 libs optional libpython2.7_2.7.15-5_amd64.deb
+ 4df34e04a27526feba8e6a8193d36c5b 9655688 debug optional python2.7-dbg_2.7.15-5_amd64.deb
+ 9e988097998dffa0697ec2d1d475f3ec 262660 python optional python2.7-dev_2.7.15-5_amd64.deb
+ 8fa9b89ffb73d47586378b4381c3c632 4403780 doc optional python2.7-doc_2.7.15-5_all.deb
+ db28d37a437ac28744e15202f237bca2 714096 python optional python2.7-examples_2.7.15-5_all.deb
+ 00eebe0f445e04b3b767e2c1b75b1bd7 1366704 python optional python2.7-minimal_2.7.15-5_amd64.deb
+ f3f9e62060e6c996672d38d2fb2f9be7 13612 python optional python2.7_2.7.15-5_amd64.buildinfo
+ 9ed5424110957a0295e4bd70ebd08e62 298728 python optional python2.7_2.7.15-5_amd64.deb

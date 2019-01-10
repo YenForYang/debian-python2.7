@@ -1,0 +1,5 @@
+Unfortunately, I had to use a
+
+	sudo ln -sf /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.pyc /usr/lib/python2.7/_sysconfigdata_nd.pyc
+
+To get python to run correctly.

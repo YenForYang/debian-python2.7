@@ -1,0 +1,7 @@
+libpython2.7-dbg binary: package-name-doesnt-match-sonames
+libpython2.7-dbg binary: non-dev-pkg-with-shlib-symlink
+
+libpython2.7-dbg binary: arch-dependent-file-not-in-arch-specific-directory
+
+# pointless lintian ...
+libpython2.7-dbg binary: hardening-no-fortify-functions

@@ -1,0 +1,13 @@
+Document: python2.7-dist
+Title: Distributing Python Modules (v2.7)
+Author: Greg Ward
+Abstract: This document describes the Python Distribution Utilities
+ (``Distutils'') from the module developer's point-of-view, describing
+ how to use the Distutils to make Python modules and extensions easily
+ available to a wider audience with very little overhead for
+ build/release/install mechanics.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python2.7/html/distutils/index.html
+Files: /usr/share/doc/python2.7/html/distutils/*.html

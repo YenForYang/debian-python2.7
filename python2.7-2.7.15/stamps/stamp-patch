@@ -1,0 +1,156 @@
+Patches applied in this version:
+
+git-updates.diff:
+  git updates of the 2.7 release branch (until 2018-11-28).
+
+issue9189.diff:
+
+build-libpython.diff:
+  Don't include object files twice in libpython.
+
+deb-setup.diff:
+  Don't include /usr/local/include and /usr/local/lib as gcc search paths
+
+deb-locations.diff:
+  adjust locations of directories to debian policy
+
+site-locations.diff:
+  Set site-packages/dist-packages
+
+distutils-install-layout.diff:
+  distutils: Add an option --install-layout=deb, which
+  - installs into $prefix/dist-packages instead of $prefix/site-packages.
+  - doesn't encode the python version into the egg name.
+
+locale-module.diff:
+  * Lib/locale.py:
+  - Don't map 'utf8', 'utf-8' to 'utf', which is not a known encoding
+  for glibc.
+
+distutils-link.diff:
+  Don't add standard library dirs to library_dirs and runtime_library_dirs.
+
+distutils-sysconfig.diff:
+  Allow setting BASECFLAGS, OPT and EXTRA_LDFLAGS (like, CC, CXX, CPP,
+  CFLAGS, CPPFLAGS, CCSHARED, LDSHARED) from the environment.
+
+test-sundry.diff:
+  test_sundry: Don't fail on import of the profile and pstats module
+
+tkinter-import.diff:
+  suggest installation of python-tk package on failing _tkinter import
+
+link-opt.diff:
+  Call the linker with -O1 -Bsymbolic-functions
+
+debug-build.diff:
+  Change the interpreter to build and install python extensions
+  built with the python-dbg interpreter with a different name into
+  the same path (by appending `_d' to the extension name).
+
+hotshot-import.diff:
+  hotshot: Check for the availability of the profile and pstats modules.
+
+no-zip-on-sys.path.diff:
+  Do not add /usr/lib/pythonXY.zip on sys.path.
+
+platform-lsbrelease.diff:
+  Use /etc/lsb-release to identify the platform.
+
+bdist-wininst-notfound.diff:
+  the wininst-* files cannot be built within Debian, needing a
+  zlib mingw build, which the zlib maintainer isn't going to provide.
+
+setup-modules-ssl.diff:
+  Modules/Setup.dist: patch to build _hashlib and _ssl extensions statically
+
+makesetup-bashism.diff:
+  Fix bashism in makesetup shell script
+
+hurd-disable-nonworking-constants.diff:
+  Comment out constant exposed on the API which are not implemented on
+  GNU/Hurd. They would not work at runtime anyway.
+
+statvfs-f_flag-constants.diff:
+
+issue9012a.diff:
+  Link _math.o only once to the static library.
+
+link-system-expat.diff:
+  Link with the system expat
+
+plat-gnukfreebsd.diff:
+
+link-whole-archive.diff:
+  Link libpython with --whole-archive.
+
+bsddb-libpath.diff:
+  Don't add the bsddb multilib path, if already in the standard lib path
+
+disable-sem-check.diff:
+  Assume working semaphores on Linux, don't rely on running kernel for the check.
+
+ctypes-arm.diff:
+
+lto-link-flags.diff:
+
+multiarch.diff:
+
+lib2to3-no-pickled-grammar.diff:
+
+add-python-config-sh.diff:
+
+ext-no-libpython-link.diff:
+  Don't link extensions with the shared libpython library.
+
+build-hash.diff:
+  Always build the _md5, _sha1, _sha256 and _sha512 extension modules.
+
+libffi-shared.diff:
+
+atomic-pyc-rename.diff:
+
+revert-unittest-loader-symlinks19352.diff:
+
+enable-sqlite-loadext.diff:
+  Allow loading of extensions in the sqlite module
+
+installed-testsuite.diff:
+  Changes needed to run the installed testsuite.
+  Also removed:
+  - ctypes/test/test_macholib.py
+  - distutils/tests/test_bdist_wininst.py
+
+ensurepip-wheels.diff:
+  Let ensurepip use the system wheels, not the ones from the python source.
+
+ensurepip-disabled.diff:
+  Disable ensurepip in Debian for now.
+
+mangle-fstack-protector.diff:
+  When using GCC versions older than 4.9, automagically mangle
+  -fstack-protector-strong to -fstack-protector
+
+reproducible-buildinfo.diff:
+  Build getbuildinfo.o with DATE/TIME values when defined
+
+pydoc-use-pager.diff:
+  pydoc: use the pager command if available.
+
+issue27239.diff:
+
+rename-md5-init.diff:
+
+local-doc-references.diff:
+
+m-i-p-s-r6.diff:
+
+bpo-33570.diff:
+
+bpo-34818.diff:
+
+bpo-34834.diff:
+
+bpo-34836.diff:
+
+multiarch-libc.diff:
